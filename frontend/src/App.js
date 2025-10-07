@@ -7,7 +7,8 @@ import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <div className="App">
+    <BrowserRouter basename="/site">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
@@ -18,6 +19,7 @@ function App() {
         </Route>
       </Routes>
     </BrowserRouter>
+    </div>
   );
 }
 
