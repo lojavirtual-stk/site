@@ -22,9 +22,9 @@ jobs:
 
       - name: Install and Build
         run: |
-          cd frontend
-          npm install
-          npm run build
+          /* cd frontend */
+          /* npm install */
+          /* npm run build */
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
