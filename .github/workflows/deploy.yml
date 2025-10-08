@@ -23,7 +23,7 @@ jobs:
       - name: Install and Build
         run: |
           cd frontend
-          /* npm install */
+          npm install
           /* npm run build */
 
       - name: Deploy to GitHub Pages
