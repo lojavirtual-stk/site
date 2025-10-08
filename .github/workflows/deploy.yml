@@ -20,11 +20,10 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install and Build
-        run: |
+      - name: Install dependencies
+         run: |
           cd frontend
-          npm install
-          /* npm run build */
+          npm install --legacy-peer-deps
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
