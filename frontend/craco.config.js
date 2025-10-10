@@ -44,3 +44,13 @@ module.exports = {
     },
   },
 };
+
+module.exports = {
+  // ...configurações existentes
+  webpack: {
+    configure: (webpackConfig) => {
+      webpackConfig.output.publicPath = '/https://github.com/lojavirtual-stk/site/';
+      return webpackConfig;
+    },
+  },
+};
